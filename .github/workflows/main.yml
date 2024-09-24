@@ -23,7 +23,9 @@ jobs:
         with:
           node-version: latest
           cache: npm
-
+      - name: Pull latest changes
+        run: git pull origin main || true  # Pull changes, ignore error if no changes
+        
       - name: ⬇️ Install dependencies
         run: npm ci
 
