@@ -66,4 +66,4 @@ async function storeData(table, date) {
     console.log(error)
   }
 }
-
+Main();
