@@ -99,7 +99,7 @@ async function storeData(result) {
     await fs.writeFile(path.join(historyDest, `data.json`), json);
   }
 }
-<<<<<<< HEAD
+
 
 async function Main() {
   try {
