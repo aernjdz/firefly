@@ -1,42 +1,30 @@
 {
     "title": "Графік погодинних відключень (ГПВ)",
-    "date": "2024-11-18",
+    "date": "2024-11-19",
     "data": [
         {
             "queue": "1",
-            "times": [
-                ""
-            ]
+            "times": []
         },
         {
             "queue": "2",
-            "times": [
-                ""
-            ]
+            "times": []
         },
         {
             "queue": "3",
-            "times": [
-                ""
-            ]
+            "times": []
         },
         {
             "queue": "4",
-            "times": [
-                ""
-            ]
+            "times": []
         },
         {
             "queue": "5",
-            "times": [
-                ""
-            ]
+            "times": []
         },
         {
             "queue": "6",
-            "times": [
-                ""
-            ]
+            "times": []
         }
     ]
 }
