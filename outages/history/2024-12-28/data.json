@@ -4,27 +4,39 @@
     "data": [
         {
             "queue": "1",
-            "times": []
+            "times": [
+                "15:00 - 17:00"
+            ]
         },
         {
             "queue": "2",
-            "times": []
+            "times": [
+                ""
+            ]
         },
         {
             "queue": "3",
-            "times": []
+            "times": [
+                ""
+            ]
         },
         {
             "queue": "4",
-            "times": []
+            "times": [
+                ""
+            ]
         },
         {
             "queue": "5",
-            "times": []
+            "times": [
+                ""
+            ]
         },
         {
             "queue": "6",
-            "times": []
+            "times": [
+                ""
+            ]
         }
     ]
 }
