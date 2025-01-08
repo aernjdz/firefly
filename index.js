@@ -49,16 +49,23 @@ async function fetchAndParseData() {
       const formattedDate = `${dateParts[2]}-${dateParts[1]}-${dateParts[0]}`;
       const queueCells = headerRow.querySelectorAll('td');
       const timeCells = dateRow.querySelectorAll('td');
-      const dayData = [];
+      const queues = {};
 
       for (let i = 0; i < queueCells.length; i++) {
         const queueText = queueCells[i].textContent.trim();
-        const queueMatch = queueText.match(/\d+\.\d+/); // Match queue types like 1.1, 1.2, etc.
-        const queue = queueMatch ? queueMatch[0] : null;
+        const mainQueueMatch = queueText.match(/^Черга №\s*(\d+)/); // Match main queues like "Черга № 1"
+        const subQueueMatch = queueText.match(/(\d+\.\d+)/); // Match sub-queues like "1.1", "1.2", etc.
 
-        if (!queue) {
-          console.warn(`Queue number not found for cell: ${queueText}`);
+        const mainQueue = mainQueueMatch ? mainQueueMatch[1] : null;
+        const subQueue = subQueueMatch ? subQueueMatch[0] : null;
+
+        if (!mainQueue || !subQueue) {
+          console.warn(`Main or sub-queue not found for cell: ${queueText}`);
           continue;
+        }
+
+        if (!queues[mainQueue]) {
+          queues[mainQueue] = [];
         }
 
         let times = [];
@@ -75,12 +82,15 @@ async function fetchAndParseData() {
           }
         }
 
-        dayData.push({ queue, times });
+        queues[mainQueue].push({
+          name_queue: subQueue,
+          times,
+        });
       }
 
       output.push({
         date: formattedDate,
-        data: dayData,
+        queues,
       });
     }
 
