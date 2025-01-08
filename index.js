@@ -29,6 +29,7 @@ async function fetchAndParseData() {
     if (rows.length < 4) {
       throw new Error(`Expected at least 4 rows, but found ${rows.length}`);
     }
+
     const titleRow = rows[0];
     const headerRow = rows[2];
     const dateRows = Array.from(rows).slice(3);
@@ -52,8 +53,8 @@ async function fetchAndParseData() {
 
       for (let i = 0; i < queueCells.length; i++) {
         const queueText = queueCells[i].textContent.trim();
-        const queueMatch = queueText.match(/№\s*(\d+)/);
-        const queue = queueMatch ? queueMatch[1] : null;
+        const queueMatch = queueText.match(/\d+\.\d+/); // Match queue types like 1.1, 1.2, etc.
+        const queue = queueMatch ? queueMatch[0] : null;
 
         if (!queue) {
           console.warn(`Queue number not found for cell: ${queueText}`);
