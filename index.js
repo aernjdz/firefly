@@ -36,8 +36,15 @@ async function fetchAndParseData() {
     const output = [];
 
     for (const dateRow of dateRows) {
-      const date = dateRow.querySelector('td').textContent.trim();
+      const dateCell = dateRow.querySelector('td');
+      if (!dateCell) continue;
+
+      const date = dateCell.textContent.trim();
       const dateParts = date.split('.');
+      if (dateParts.length !== 3) {
+        console.warn(`Invalid date format: ${date}`);
+        continue;
+      }
       const formattedDate = `${dateParts[2]}-${dateParts[1]}-${dateParts[0]}`;
       const queueCells = headerRow.querySelectorAll('td');
       const timeCells = dateRow.querySelectorAll('td');
@@ -45,11 +52,17 @@ async function fetchAndParseData() {
 
       for (let i = 0; i < queueCells.length; i++) {
         const queueText = queueCells[i].textContent.trim();
-        const queue = queueText.match(/№\s*\d+/)[0];
-       
+        const queueMatch = queueText.match(/№\s*(\d+)/);
+        const queue = queueMatch ? queueMatch[1] : null;
+
+        if (!queue) {
+          console.warn(`Queue number not found for cell: ${queueText}`);
+          continue;
+        }
+
         let times = [];
-        if (i < timeCells.length) {
-          const timeCell = timeCells[i+1];
+        if (i + 1 < timeCells.length) {
+          const timeCell = timeCells[i + 1];
           if (timeCell.textContent.trim() === 'Очікується') {
             times = [];
           } else {
@@ -60,12 +73,13 @@ async function fetchAndParseData() {
             }
           }
         }
-        dayData.push({ queue: queue[2], times });
+
+        dayData.push({ queue, times });
       }
 
       output.push({
         date: formattedDate,
-        data: dayData
+        data: dayData,
       });
     }
 
@@ -87,19 +101,18 @@ async function storeData(result) {
 
   for (const dateData of result.dates) {
     const json = JSON.stringify({ title: result.title, ...dateData }, null, 4);
-    
+
     if (dateData.date === kyivDate) {
       const latestDest = path.join(__dirname, '/outages/latest');
       await fs.mkdir(latestDest, { recursive: true });
       await fs.writeFile(path.join(latestDest, `data.json`), json);
     }
-    
+
     const historyDest = path.join(__dirname, '/outages/history', dateData.date);
     await fs.mkdir(historyDest, { recursive: true });
     await fs.writeFile(path.join(historyDest, `data.json`), json);
   }
 }
-
 
 async function Main() {
   try {
