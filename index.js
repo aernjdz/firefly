@@ -63,49 +63,32 @@ async function fetchAndParseData() {
 
       // Process queue data
       const queues = {};
-      let currentQueue = null;
       
       // Skip first cell (date) and process time slots
-      for (let j = 1; j < cells.length; j++) {
-        const subQueueNumber = subQueues[j - 1].textContent.trim();
+      for (let j = 0; j < subQueues.length; j++) {
+        const subQueueNumber = subQueues[j].textContent.trim();
         const [mainQueue, subQueue] = subQueueNumber.split('.');
         
         if (!queues[mainQueue]) {
           queues[mainQueue] = [];
         }
 
-        // Parse time slots
-        const timeCell = cells[j];
         let times = [];
-        
-        if (timeCell.textContent.trim() === 'Очікується') {
-          times = [];
-        } else {
-          const timeParts = [];
-          // First check for <p> tags
-          const paragraphs = timeCell.querySelectorAll('p');
-          if (paragraphs.length > 0) {
-            paragraphs.forEach(p => {
-              const timeText = p.textContent.trim();
-              if (timeText.includes(':')) {
-                timeParts.push(timeText);
-              }
-            });
+        if (j + 1 < cells.length) {
+          const timeCell = cells[j + 1];
+          if (timeCell.textContent.trim() === 'Очікується' || timeCell.textContent.trim() === "") {
+            times = [];
           } else {
-            // If no paragraphs, use the text content
-            const cellText = timeCell.textContent.trim();
-            // Split by both newlines and multiple spaces
-            const parts = cellText.split(/[\n\r]+|\s{2,}/);
-            parts.forEach(part => {
-              const timeText = part.trim();
-              if (timeText.includes(':')) {
-                timeParts.push(timeText);
-              }
-            });
-          }
-          // Join all valid time parts with comma and space
-          if (timeParts.length > 0) {
-            times = [timeParts.join(' , ')];
+            const timeParagraphs = timeCell.querySelectorAll('p');
+            times = Array.from(timeParagraphs).map(p => p.textContent.trim()).filter(t => t !== '');
+            if (times.length === 0) {
+              times = [timeCell.textContent.trim()];
+            }
+            
+            // Join multiple time periods with comma and space
+            if (times.length > 1) {
+              times = [times.join(' , ')];
+            }
           }
         }
 
