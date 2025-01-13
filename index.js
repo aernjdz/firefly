@@ -81,11 +81,21 @@ async function fetchAndParseData() {
         if (timeCell.textContent.trim() === 'Очікується') {
           times = [];
         } else {
-          // Process time ranges
+          // Process time ranges, handling spaces before and after the hyphen
           const timeText = timeCell.textContent.trim();
-          times = timeText.split(/\s+/)
-            .filter(t => t.includes('-'))
-            .map(t => t.replace(/\s+/g, ''));
+          times = timeText
+            .split(/\s+/)
+            .map(t => {
+              // Check if it's a time range (contains numbers and ':')
+              if (/\d+:\d+/.test(t)) {
+                const parts = t.split(/\s*-\s*/); // Split by hyphen with optional spaces
+                if (parts.length === 2) {
+                  return `${parts[0]}-${parts[1]}`;
+                }
+              }
+              return null;
+            })
+            .filter(t => t !== null); // Remove any non-time entries
         }
 
         queues[mainQueue].push({
