@@ -81,23 +81,32 @@ async function fetchAndParseData() {
         if (timeCell.textContent.trim() === 'Очікується') {
           times = [];
         } else {
-          // Split by paragraphs first if they exist
+          const timeParts = [];
+          // First check for <p> tags
           const paragraphs = timeCell.querySelectorAll('p');
           if (paragraphs.length > 0) {
-            times = Array.from(paragraphs)
-              .map(p => p.textContent.trim())
-              .filter(t => t.includes(':'));
+            paragraphs.forEach(p => {
+              const timeText = p.textContent.trim();
+              if (timeText.includes(':')) {
+                timeParts.push(timeText);
+              }
+            });
           } else {
-            // If no paragraphs, split by multiple spaces
-            times = timeCell.textContent
-              .trim()
-              .split(/\s{2,}/)
-              .map(t => t.trim())
-              .filter(t => t.includes(':'));
+            // If no paragraphs, use the text content
+            const cellText = timeCell.textContent.trim();
+            // Split by both newlines and multiple spaces
+            const parts = cellText.split(/[\n\r]+|\s{2,}/);
+            parts.forEach(part => {
+              const timeText = part.trim();
+              if (timeText.includes(':')) {
+                timeParts.push(timeText);
+              }
+            });
           }
-
-          // Join all times with commas and spaces
-          times = [times.join(' , ')];
+          // Join all valid time parts with comma and space
+          if (timeParts.length > 0) {
+            times = [timeParts.join(' , ')];
+          }
         }
 
         queues[mainQueue].push({
