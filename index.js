@@ -85,10 +85,6 @@ async function fetchAndParseData() {
               times = [timeCell.textContent.trim()];
             }
             
-            // Join multiple time periods with comma and space
-            if (times.length > 1) {
-              times = [times.join(' , ')];
-            }
           }
         }
 
