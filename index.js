@@ -95,6 +95,9 @@ async function fetchAndParseData() {
               .map(t => t.trim())
               .filter(t => t.includes(':'));
           }
+
+          // Join all times with commas and spaces
+          times = [times.join(' , ')];
         }
 
         queues[mainQueue].push({
