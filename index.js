@@ -25,21 +25,31 @@ async function fetchAndParseData() {
     if (!table) {
       throw new Error('Table not found within #fetched-data-container');
     }
-    const rows = table.querySelectorAll('tr');
+
+    const rows = Array.from(table.querySelectorAll('tr'));
     if (rows.length < 4) {
       throw new Error(`Expected at least 4 rows, but found ${rows.length}`);
     }
 
-    const titleRow = rows[0];
-    const headerRow = rows[2];
-    const dateRows = Array.from(rows).slice(3);
-    const title = titleRow.textContent.trim();
+    // Get title from the first row
+    const title = rows[0].querySelector('td').textContent.trim();
+    
+    // Get queue numbers from the third row (queue headers)
+    const queueHeaders = Array.from(rows[2].querySelectorAll('td'));
+    
+    // Get sub-queue numbers from the fourth row
+    const subQueueRow = rows[3];
+    const subQueues = Array.from(subQueueRow.querySelectorAll('td')).slice(1); // Skip first column (label)
+
     const output = [];
 
-    for (const dateRow of dateRows) {
-      const dateCell = dateRow.querySelector('td');
-      if (!dateCell) continue;
-
+    // Process data rows (starting from index 4)
+    for (let i = 4; i < rows.length; i++) {
+      const dateRow = rows[i];
+      const cells = Array.from(dateRow.querySelectorAll('td'));
+      
+      // Get date from first cell
+      const dateCell = cells[0];
       const date = dateCell.textContent.trim();
       const dateParts = date.split('.');
       if (dateParts.length !== 3) {
@@ -47,43 +57,37 @@ async function fetchAndParseData() {
         continue;
       }
       const formattedDate = `${dateParts[2]}-${dateParts[1]}-${dateParts[0]}`;
-      const queueCells = headerRow.querySelectorAll('td');
-      const timeCells = dateRow.querySelectorAll('td');
+
+      // Process queue data
       const queues = {};
-
-      for (let i = 0; i < queueCells.length; i++) {
-        const queueText = queueCells[i].textContent.trim();
-        const mainQueueMatch = queueText.match(/^Черга №\s*(\d+)/); // Match main queues like "Черга № 1"
-        const subQueueMatch = queueText.match(/(\d+\.\d+)/); // Match sub-queues like "1.1", "1.2", etc.
-
-        const mainQueue = mainQueueMatch ? mainQueueMatch[1] : null;
-        const subQueue = subQueueMatch ? subQueueMatch[0] : null;
-
-        if (!mainQueue || !subQueue) {
-          console.warn(`Main or sub-queue not found for cell: ${queueText}`);
-          continue;
-        }
-
+      let currentQueue = null;
+      
+      // Skip first cell (date) and process time slots
+      for (let j = 1; j < cells.length; j++) {
+        const subQueueNumber = subQueues[j - 1].textContent.trim();
+        const [mainQueue, subQueue] = subQueueNumber.split('.');
+        
         if (!queues[mainQueue]) {
           queues[mainQueue] = [];
         }
 
+        // Parse time slots
+        const timeCell = cells[j];
         let times = [];
-        if (i + 1 < timeCells.length) {
-          const timeCell = timeCells[i + 1];
-          if (timeCell.textContent.trim() === 'Очікується') {
-            times = [];
-          } else {
-            const timeParagraphs = timeCell.querySelectorAll('p');
-            times = Array.from(timeParagraphs).map(p => p.textContent.trim()).filter(t => t !== '');
-            if (times.length === 0) {
-              times = [timeCell.textContent.trim()];
-            }
-          }
+        
+        if (timeCell.textContent.trim() === 'Очікується') {
+          times = [];
+        } else {
+          // Split time ranges by whitespace and filter out empty strings
+          times = timeCell.textContent
+            .trim()
+            .split(/\s+/)
+            .filter(t => t.includes(':') && t !== '')
+            .map(t => t.trim());
         }
 
         queues[mainQueue].push({
-          name_queue: subQueue,
+          name_queue: subQueueNumber,
           times,
         });
       }
