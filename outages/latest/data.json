@@ -1,70 +1,70 @@
 {
-    "title": "Графік погодинних відключень (ГПВ)",
-    "date": "2025-01-20",
-    "queues": {
-        "1": [
-            {
-                "name_queue": "1.1",
-                "times": [
-                    "11:00 - 19:00"
-                ]
-            },
-            {
-                "name_queue": "1.2",
-                "times": [
-                    "11:00 - 19:00"
-                ]
-            }
-        ],
-        "2": [
-            {
-                "name_queue": "2.1",
-                "times": []
-            },
-            {
-                "name_queue": "2.2",
-                "times": []
-            }
-        ],
-        "3": [
-            {
-                "name_queue": "3.1",
-                "times": []
-            },
-            {
-                "name_queue": "3.2",
-                "times": []
-            }
-        ],
-        "4": [
-            {
-                "name_queue": "4.1",
-                "times": []
-            },
-            {
-                "name_queue": "4.2",
-                "times": []
-            }
-        ],
-        "5": [
-            {
-                "name_queue": "5.1",
-                "times": []
-            },
-            {
-                "name_queue": "5.2",
-                "times": []
-            }
-        ],
-        "6": [
-            {
-                "name_queue": "6.1",
-                "times": []
-            },
-            {
-                "name_queue": "6.2",
-                "times": []
-            }
+  "title": "Графік погодинних відключень (ГПВ)",
+  "date": "2025-01-20",
+  "queues": {
+    "1": [
+      {
+        "name_queue": "1.1",
+        "times": [
+          "11:00 - 19:00"
         ]
-    }
+      },
+      {
+        "name_queue": "1.2",
+        "times": [
+          "11:00 - 19:00"
+        ]
+      }
+    ],
+    "2": [
+      {
+        "name_queue": "2.1",
+        "times": []
+      },
+      {
+        "name_queue": "2.2",
+        "times": []
+      }
+    ],
+    "3": [
+      {
+        "name_queue": "3.1",
+        "times": []
+      },
+      {
+        "name_queue": "3.2",
+        "times": []
+      }
+    ],
+    "4": [
+      {
+        "name_queue": "4.1",
+        "times": []
+      },
+      {
+        "name_queue": "4.2",
+        "times": []
+      }
+    ],
+    "5": [
+      {
+        "name_queue": "5.1",
+        "times": []
+      },
+      {
+        "name_queue": "5.2",
+        "times": []
+      }
+    ],
+    "6": [
+      {
+        "name_queue": "6.1",
+        "times": []
+      },
+      {
+        "name_queue": "6.2",
+        "times": []
+      }
+    ]
+  }
 }
