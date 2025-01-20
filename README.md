@@ -29,7 +29,7 @@
 ### **URL для запитів**
 API доступне за URL:  
 `https://raw.githubusercontent.com/aernjdz/firefly/refs/heads/main/outages/latest/data.json`
-
+`https://raw.githubusercontent.com/aernjdz/firefly/refs/heads/main/outages/latest/data_v2.json`
 ---
 
 ### **Структура відповіді**
