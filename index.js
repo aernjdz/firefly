@@ -11,12 +11,12 @@ const httpsAgent = new https.Agent({
 async function fetchAndParseData() {
   let htmlContent = '';
   try {
-  // const response = await axios.get('http://109.87.215.193:5500/%D0%92%D1%96%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%BD%D1%8F%20%E2%8B%86%20%D0%A0%D1%96%D0%B2%D0%BD%D0%B5%D0%BE%D0%B1%D0%BB%D0%B5%D0%BD%D0%B5%D1%80%D0%B3%D0%BE.html', {
-  //     httpsAgent,
-  //   });
-    const response = await axios.get('https://www.roe.vsei.ua/disconnections', {
+  const response = await axios.get('http://109.87.215.193:5500/%D0%92%D1%96%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%BD%D1%8F%20%E2%8B%86%20%D0%A0%D1%96%D0%B2%D0%BD%D0%B5%D0%BE%D0%B1%D0%BB%D0%B5%D0%BD%D0%B5%D1%80%D0%B3%D0%BE.html', {
       httpsAgent,
-   });
+    });
+   //  const response = await axios.get('https://www.roe.vsei.ua/disconnections', {
+   //    httpsAgent,
+   // });
     htmlContent = response.data;
     const dom = new JSDOM(htmlContent);
     const document = dom.window.document;
