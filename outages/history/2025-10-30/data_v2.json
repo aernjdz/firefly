@@ -49,12 +49,12 @@
           {
             "startTime": "08:00",
             "endTime": "09:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "09:00",
             "endTime": "10:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "10:00",
@@ -174,12 +174,12 @@
           {
             "startTime": "08:00",
             "endTime": "09:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "09:00",
             "endTime": "10:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "10:00",
@@ -331,7 +331,7 @@
           {
             "startTime": "14:00",
             "endTime": "15:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "15:00",
@@ -346,12 +346,12 @@
           {
             "startTime": "17:00",
             "endTime": "18:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "18:00",
             "endTime": "19:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "19:00",
@@ -456,7 +456,7 @@
           {
             "startTime": "14:00",
             "endTime": "15:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "15:00",
@@ -471,12 +471,12 @@
           {
             "startTime": "17:00",
             "endTime": "18:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "18:00",
             "endTime": "19:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "19:00",
@@ -598,12 +598,12 @@
           {
             "startTime": "17:00",
             "endTime": "18:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "18:00",
             "endTime": "19:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "19:00",
@@ -723,12 +723,12 @@
           {
             "startTime": "17:00",
             "endTime": "18:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "18:00",
             "endTime": "19:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "19:00",
