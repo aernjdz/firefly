@@ -583,12 +583,12 @@
           {
             "startTime": "14:00",
             "endTime": "15:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "15:00",
             "endTime": "16:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "16:00",
@@ -603,7 +603,7 @@
           {
             "startTime": "18:00",
             "endTime": "19:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "19:00",
