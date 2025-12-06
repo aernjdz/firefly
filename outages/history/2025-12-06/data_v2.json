@@ -39,12 +39,12 @@
           {
             "startTime": "06:00",
             "endTime": "07:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "07:00",
             "endTime": "08:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "08:00",
@@ -543,12 +543,12 @@
           {
             "startTime": "06:00",
             "endTime": "07:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "07:00",
             "endTime": "08:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "08:00",
@@ -1047,17 +1047,17 @@
           {
             "startTime": "06:00",
             "endTime": "07:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "07:00",
             "endTime": "08:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "08:00",
             "endTime": "09:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "09:00",
@@ -1299,17 +1299,17 @@
           {
             "startTime": "06:00",
             "endTime": "07:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "07:00",
             "endTime": "08:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "08:00",
             "endTime": "09:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "09:00",
