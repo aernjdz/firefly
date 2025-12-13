@@ -1,6 +1,6 @@
 {
   "title": "Графік погодинних відключень (ГПВ)",
-  "date": "2025-12-13",
+  "date": "2025-12-14",
   "queues": {
     "1": [
       {
@@ -718,12 +718,12 @@
           {
             "startTime": "16:00",
             "endTime": "17:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "17:00",
             "endTime": "18:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "18:00",
@@ -830,17 +830,17 @@
           {
             "startTime": "13:00",
             "endTime": "14:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "14:00",
             "endTime": "15:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "15:00",
             "endTime": "16:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "16:00",
@@ -970,12 +970,12 @@
           {
             "startTime": "16:00",
             "endTime": "17:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "17:00",
             "endTime": "18:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "18:00",
@@ -1207,17 +1207,17 @@
           {
             "startTime": "13:00",
             "endTime": "14:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "14:00",
             "endTime": "15:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "15:00",
             "endTime": "16:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "16:00",
