@@ -1,6 +1,6 @@
 {
   "title": "Графік погодинних відключень (ГПВ)",
-  "date": "2025-12-23",
+  "date": "2025-12-24",
   "queues": {
     "1": [
       {
@@ -69,22 +69,22 @@
           {
             "startTime": "12:00",
             "endTime": "13:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "13:00",
             "endTime": "14:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "14:00",
             "endTime": "15:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "15:00",
             "endTime": "16:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "16:00",
@@ -194,22 +194,22 @@
           {
             "startTime": "12:00",
             "endTime": "13:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "13:00",
             "endTime": "14:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "14:00",
             "endTime": "15:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "15:00",
             "endTime": "16:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "16:00",
@@ -321,22 +321,22 @@
           {
             "startTime": "12:00",
             "endTime": "13:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "13:00",
             "endTime": "14:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "14:00",
             "endTime": "15:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "15:00",
             "endTime": "16:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "16:00",
@@ -446,22 +446,22 @@
           {
             "startTime": "12:00",
             "endTime": "13:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "13:00",
             "endTime": "14:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "14:00",
             "endTime": "15:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "15:00",
             "endTime": "16:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "16:00",
