@@ -24,22 +24,22 @@
           {
             "startTime": "03:00",
             "endTime": "04:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "04:00",
             "endTime": "05:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "05:00",
             "endTime": "06:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "06:00",
             "endTime": "07:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "07:00",
