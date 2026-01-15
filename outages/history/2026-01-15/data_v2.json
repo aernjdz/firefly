@@ -159,7 +159,7 @@
           {
             "startTime": "05:00",
             "endTime": "06:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "06:00",
@@ -548,7 +548,7 @@
           {
             "startTime": "07:00",
             "endTime": "08:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "08:00",
@@ -785,7 +785,7 @@
           {
             "startTime": "04:00",
             "endTime": "05:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "05:00",
@@ -1032,7 +1032,7 @@
           {
             "startTime": "03:00",
             "endTime": "04:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "04:00",
@@ -1279,7 +1279,7 @@
           {
             "startTime": "02:00",
             "endTime": "03:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "03:00",
@@ -1299,7 +1299,7 @@
           {
             "startTime": "06:00",
             "endTime": "07:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "07:00",
