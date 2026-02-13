@@ -5,61 +5,85 @@
     "1": [
       {
         "name_queue": "1.1",
-        "times": []
+        "times": [
+          "08:00 - 10:00"
+        ]
       },
       {
         "name_queue": "1.2",
-        "times": []
+        "times": [
+          "08:00 - 10:00"
+        ]
       }
     ],
     "2": [
       {
         "name_queue": "2.1",
-        "times": []
+        "times": [
+          "10:00 - 13:00"
+        ]
       },
       {
         "name_queue": "2.2",
-        "times": []
+        "times": [
+          "10:00 - 13:00"
+        ]
       }
     ],
     "3": [
       {
         "name_queue": "3.1",
-        "times": []
+        "times": [
+          "13:00 - 16:00"
+        ]
       },
       {
         "name_queue": "3.2",
-        "times": []
+        "times": [
+          "13:00 - 16:00"
+        ]
       }
     ],
     "4": [
       {
         "name_queue": "4.1",
-        "times": []
+        "times": [
+          "16:00 - 18:00"
+        ]
       },
       {
         "name_queue": "4.2",
-        "times": []
+        "times": [
+          "16:00 - 18:00"
+        ]
       }
     ],
     "5": [
       {
         "name_queue": "5.1",
-        "times": []
+        "times": [
+          "18:00 - 21:00"
+        ]
       },
       {
         "name_queue": "5.2",
-        "times": []
+        "times": [
+          "18:00 - 21:00"
+        ]
       }
     ],
     "6": [
       {
         "name_queue": "6.1",
-        "times": []
+        "times": [
+          "21:00 - 23:59"
+        ]
       },
       {
         "name_queue": "6.2",
-        "times": []
+        "times": [
+          "21:00 - 23:59"
+        ]
       }
     ]
   }
