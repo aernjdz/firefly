@@ -1,6 +1,6 @@
 {
   "title": "Графік погодинних відключень (ГПВ)",
-  "date": "2026-03-11",
+  "date": "2026-03-12",
   "queues": {
     "1": [
       {
@@ -99,12 +99,12 @@
           {
             "startTime": "18:00",
             "endTime": "19:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "19:00",
             "endTime": "20:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "20:00",
@@ -224,12 +224,12 @@
           {
             "startTime": "18:00",
             "endTime": "19:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "19:00",
             "endTime": "20:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "20:00",
@@ -356,12 +356,12 @@
           {
             "startTime": "19:00",
             "endTime": "20:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "20:00",
             "endTime": "21:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "21:00",
@@ -486,12 +486,12 @@
           {
             "startTime": "20:00",
             "endTime": "21:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "21:00",
             "endTime": "22:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "22:00",
@@ -618,17 +618,17 @@
           {
             "startTime": "21:00",
             "endTime": "22:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "22:00",
             "endTime": "23:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "23:00",
             "endTime": "00:00",
-            "status": "Active"
+            "status": "Inactive"
           }
         ]
       },
@@ -748,12 +748,12 @@
           {
             "startTime": "22:00",
             "endTime": "23:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "23:00",
             "endTime": "00:00",
-            "status": "Active"
+            "status": "Inactive"
           }
         ]
       }
@@ -850,12 +850,12 @@
           {
             "startTime": "17:00",
             "endTime": "18:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "18:00",
             "endTime": "19:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "19:00",
@@ -975,17 +975,17 @@
           {
             "startTime": "17:00",
             "endTime": "18:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "18:00",
             "endTime": "19:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "19:00",
             "endTime": "20:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "20:00",
@@ -1112,12 +1112,12 @@
           {
             "startTime": "19:00",
             "endTime": "20:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "20:00",
             "endTime": "21:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "21:00",
@@ -1237,12 +1237,12 @@
           {
             "startTime": "19:00",
             "endTime": "20:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "20:00",
             "endTime": "21:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "21:00",
@@ -1369,17 +1369,17 @@
           {
             "startTime": "20:00",
             "endTime": "21:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "21:00",
             "endTime": "22:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "22:00",
             "endTime": "23:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "23:00",
@@ -1499,12 +1499,12 @@
           {
             "startTime": "21:00",
             "endTime": "22:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "22:00",
             "endTime": "23:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "23:00",
