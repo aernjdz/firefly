@@ -114,7 +114,7 @@
           {
             "startTime": "21:00",
             "endTime": "22:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "22:00",
@@ -239,7 +239,7 @@
           {
             "startTime": "21:00",
             "endTime": "22:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "22:00",
