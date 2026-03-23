@@ -481,7 +481,7 @@
           {
             "startTime": "19:00",
             "endTime": "20:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "20:00",
@@ -491,7 +491,7 @@
           {
             "startTime": "21:00",
             "endTime": "22:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "22:00",
