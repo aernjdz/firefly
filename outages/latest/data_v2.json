@@ -1,6 +1,6 @@
 {
   "title": "Графік погодинних відключень (ГПВ)",
-  "date": "2026-04-03",
+  "date": "2026-04-04",
   "queues": {
     "1": [
       {
@@ -44,12 +44,12 @@
           {
             "startTime": "07:00",
             "endTime": "08:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "08:00",
             "endTime": "09:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "09:00",
@@ -169,12 +169,12 @@
           {
             "startTime": "07:00",
             "endTime": "08:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "08:00",
             "endTime": "09:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "09:00",
@@ -306,12 +306,12 @@
           {
             "startTime": "09:00",
             "endTime": "10:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "10:00",
             "endTime": "11:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "11:00",
@@ -431,12 +431,12 @@
           {
             "startTime": "09:00",
             "endTime": "10:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "10:00",
             "endTime": "11:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "11:00",
