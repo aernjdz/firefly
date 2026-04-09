@@ -244,12 +244,12 @@
           {
             "startTime": "22:00",
             "endTime": "23:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "23:00",
             "endTime": "00:00",
-            "status": "Inactive"
+            "status": "Active"
           }
         ]
       }
@@ -743,7 +743,7 @@
           {
             "startTime": "21:00",
             "endTime": "22:00",
-            "status": "Active"
+            "status": "Inactive"
           },
           {
             "startTime": "22:00",
@@ -875,12 +875,12 @@
           {
             "startTime": "22:00",
             "endTime": "23:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "23:00",
             "endTime": "00:00",
-            "status": "Inactive"
+            "status": "Active"
           }
         ]
       },
@@ -1000,12 +1000,12 @@
           {
             "startTime": "22:00",
             "endTime": "23:00",
-            "status": "Inactive"
+            "status": "Active"
           },
           {
             "startTime": "23:00",
             "endTime": "00:00",
-            "status": "Inactive"
+            "status": "Active"
           }
         ]
       }
